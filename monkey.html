@@ -10,19 +10,31 @@
 			}
 			.div {
 				position: relative;
-                        }
+				animation: div 6s linear infinite;
+            }
 
-                        img {
-                                max-width: 100%;
-                                height: auto;
-                        }
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+@keyframes div {
+	from {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 2;
+	}
+}
 		</style>
 	</head>
-	<body>
+	<body class="div">
 		<script type="text/jscript">
-			id=Math.round(Math.random()*7)+1
-			document.write("<img src='https://folding-fan.github.io/monkey.github.io/"+id+".jpg'>")
+			id=Math.floor(Math.random()*8)+1
+			document.write("<img src='monkey2/"+id+".jpg' >")
 		</script>
-		<h1><strong>每次打开网页随机显示图片</strong></h1>
+		<h1><strong style="color: pink;">刷新网页随机显示美女</strong></h1>
 	</body>
 </html>
